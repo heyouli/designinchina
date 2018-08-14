@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><%= link_to "About", simple_pages_about_path %></li>
+        <li><%= link_to "Posts", simple_pages_posts_path %></li>
+        <li><%= link_to "Hire me", simple_pages_hireme_path %></li>
+      </ul>
+    </nav>
     <%= yield %>
+      <footer>
+        &copy; 2018 Design in China 设计在中国
+      </footer>
   </body>
 </html>
