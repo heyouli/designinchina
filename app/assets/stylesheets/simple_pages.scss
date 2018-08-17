@@ -1,3 +1,172 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* ============ General Settings ============ */
+* {
+  box-sizing: border-box;
+  font-family: 'Exo', Helvetica, Arial, sans-serif;
+  margin: 2%;
+  background-color: white;
+}
+
+body {
+  background-color: #f7f3ee;
+  color: #3d3c3c;
+}
+
+
+/* ============ Typography ============ */
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.6em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 4%;
+  background-color:  #f7f3ee!important;
+}
+
+ h1::before {
+  content: '';
+  position: absolute;
+  width: 5em;
+  height: 0.05em;
+  margin-top: 1.2em;
+  margin-left:-2%;
+  margin-right: auto;
+  background: #3d3c3c;
+}
+
+p {
+  font-family: 'Exo', Helvetica, Arial, sans-serif;
+  color: #3d3c3c;
+  font-size: 1.15em;
+  letter-spacing: 0.02em;
+  line-height: 1.7em;
+  font-weight: 300;
+  background-color:  #f7f3ee!important;
+}
+
+h2 {
+  font-family: 'Exo', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+a {
+  font-family: 'Exo', Helvetica, Arial, sans-serif;
+  color: #3d3c3c;
+  font-weight: 300;
+}
+
+a:hover {
+  color: grey;
+  background-color: transparent;
+}
+
+a:visited {
+  color: #3d3c3c;
+  font-weight: 300;
+}
+
+
+
+/* ============ Navigation ============ */
+.logo {
+  float: left;
+  margin-top: 0;
+
+}
+
+.claim {
+  background-color: #f7f3ee;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3%;
+}
+
+.claim p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  background-color: #f7f3ee !important;
+  border-color: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+
+button.navbar-toggler {
+  border: 0px;
+}
+
+.navbar-light .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(61, 60, 60, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-nav .nav-link {
+color: #3d3c3c;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+color: grey;
+}
+
+.navbar a, .dropdown-menu a, .dropdown-menu>li>a {
+  letter-spacing: 0.07em;
+  background-color:  #f7f3ee!important;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.navbar-collapse {
+  background-color:  #f7f3ee!important;
+}
+
+.navbar-nav {
+  background-color:  #f7f3ee!important;
+  width: auto;
+}
+
+.navbar-nav li {
+  background-color:  #f7f3ee!important;
+}
+
+.main-navigation .form-inline {
+  background-color:  #f7f3ee!important;
+}
+
+.main-navigation .form-control {
+  background-color:  #f7f3ee!important;
+ }
+
+a.nav-link {
+  color: #3d3c3c;
+}
+
+.header-nav {
+  color: #3d3c3c;
+}
+
+.logo {
+  width: 100px;
+}
+/* ============ Footer ============ */
+
+.footer-content {
+  background-color: #3d3c3c;
+  color: white;
+  font-size: 0.7em;
+  text-align: center;
+  font-weight: lighter;
+  height: 50px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 0;
+  margin-right: 0;
+}
