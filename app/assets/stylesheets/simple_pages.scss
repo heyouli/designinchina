@@ -6,15 +6,14 @@
 * {
   box-sizing: border-box;
   font-family: 'Exo', Helvetica, Arial, sans-serif;
-  margin: 2%;
   background-color: white;
 }
 
 body {
   background-color: #f7f3ee;
   color: #3d3c3c;
+  margin-top: 1em;
 }
-
 
 /* ============ Typography ============ */
 h1 {
@@ -27,15 +26,24 @@ h1 {
   background-color:  #f7f3ee!important;
 }
 
- h1::before {
-  content: '';
-  position: absolute;
-  width: 5em;
-  height: 0.05em;
-  margin-top: 1.2em;
-  margin-left:-2%;
-  margin-right: auto;
-  background: #3d3c3c;
+h5 {
+  font-size: 0.9em;
+  background-color:  #f7f3ee!important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: 1em;
+}
+
+ h5::before {
+  content: "";
+  background: #efd300;
+  height: 0.03em;
+  margin-top: -3%;
+}
+
+h6 {
+  background-color:  #f7f3ee!important;
+  color: #3d3c3c;
 }
 
 p {
@@ -71,33 +79,42 @@ a:visited {
   font-weight: 300;
 }
 
-
-
 /* ============ Navigation ============ */
 .logo {
-  float: left;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
-
-}
-
-.claim {
-  background-color: #f7f3ee;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 3%;
-}
-
-.claim p {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 1em;
+  width: 100px;
 }
 
 .navbar {
   background-color: #f7f3ee !important;
   border-color: transparent;
-  width: 100%;
-  overflow: hidden;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.navbar-nav {
+  background-color: #f7f3ee!important;
+}
+
+.navbar-nav li {
+  background-color: #f7f3ee!important;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 button.navbar-toggler {
@@ -113,7 +130,7 @@ color: #3d3c3c;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-color: grey;
+  color: grey;
 }
 
 .navbar a, .dropdown-menu a, .dropdown-menu>li>a {
@@ -125,15 +142,6 @@ color: grey;
 }
 
 .navbar-collapse {
-  background-color:  #f7f3ee!important;
-}
-
-.navbar-nav {
-  background-color:  #f7f3ee!important;
-  width: auto;
-}
-
-.navbar-nav li {
   background-color:  #f7f3ee!important;
 }
 
@@ -153,15 +161,92 @@ a.nav-link {
   color: #3d3c3c;
 }
 
-.logo {
-  width: 100px;
+
+/* ============ Carousel ============ */
+
+.carousel-item{
+  background-color:  #f7f3ee!important;
 }
+
+.jumbotron-images {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.landing-carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.landing-carousel .carousel-caption {
+  background-color:  white;
+  position: absolute;
+  display: inline-block;
+  max-width: 440px;
+  max-height: 200px;
+  top: 52%;
+  transform: translateY(-30%);
+  padding:1em;
+}
+
+.landing-carousel .carousel-caption p{
+  text-overflow: ellipsis;
+}
+
+ol.carousel-indicators {
+  background-color:  transparent!important;
+}
+
+.landing-carousel h5 {
+  background-color: white!important;
+  font-size: 1em;
+  color: #3d3c3c;
+  padding-top: 1%;
+}
+
+.landing-carousel h6 {
+  background-color: white!important;
+}
+
+.landing-carousel p {
+  background-color: white!important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d3c3c' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  height: 30px;
+  width: 30px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233d3c3c;' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  height: 30px;
+  width: 30px;
+}
+
+.mainpage-category {
+  position: absolute;
+  top: -10%;
+  left: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainpage-category h6 {
+  background-color: transparent!important;
+}
+
+
 /* ============ Footer ============ */
 
 .footer-content {
   background-color: #3d3c3c;
   color: white;
-  font-size: 0.7em;
+  font-size: 0.9em;
   text-align: center;
   font-weight: lighter;
   height: 50px;
@@ -169,4 +254,10 @@ a.nav-link {
   padding-bottom: 1%;
   margin-left: 0;
   margin-right: 0;
+  width: 100%;
+}
+
+/* ============ Media Queries ============ */
+@media only screen and (max-width: 991px) {
+
 }
